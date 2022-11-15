@@ -1,0 +1,85 @@
+@font-face {
+    font-family: zelda-font;
+    src: url(./The\ Wild\ Breath\ of\ Zelda.otf);
+}
+*{
+    font-family: zelda-font;
+    margin: 0;
+}
+body{
+    background-color: #2b2525;
+    }
+    #dias{
+        font-size: 30px;
+    }
+    #horas{
+        font-size: 30px;
+    }
+    #minutos{
+        font-size: 30px;
+    }
+    #segundos{
+        font-size: 30px;
+    }
+.titulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.titulo h1{
+    text-align: center;
+    color: #b9bbaa;
+}
+.titulo img{
+    height: 100px;
+    width: 100px;
+}
+.temporizador {
+    color: #b9bbaa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    
+}
+.bloque{
+    margin-top: 50px;
+    border-color: #b9bbaa;
+    border: 5px;
+    border-style: solid;
+    border-radius: 20px;
+    height: 80px;
+    width: 300px;
+    
+}
+p{
+    font-size: 40px;
+}
+@media (min-width:720px){
+    .temporizador{
+        margin-top: 150px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .bloque{
+        margin-left: 10px;
+    }
+    .titulo{
+        align-items: flex-start;
+        display: flex;
+        flex-direction: row;
+    }
+    .titulo h1{
+       font-size: 70px;
+       text-align: left;
+       
+    }
+    .titulo img{
+        height: 150px;
+        width: 150px;
+    }
+}
